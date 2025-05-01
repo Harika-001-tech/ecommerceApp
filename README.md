@@ -1,12 +1,54 @@
-# React + Vite
+# E-Commerce App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive e-commerce application built to provide a seamless online shopping experience. The app is hosted on Vercel and available [here](https://ecommerce-app-bay-gamma.vercel.app/).
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Browse products with detailed descriptions.
+- Add products to the cart.
+- Update quantities in the shopping cart.
+- Checkout process to complete purchases.
+- Responsive design for all devices.
 
-## Expanding the ESLint configuration
+## Technology Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend:** React.js
+- **Styling:** Tailwind CSS
+- **Backend API:** [Fake Store API](https://fakestoreapi.com)
+- **Hosting:** Vercel
+- 
+## API Integration
+
+This application fetches product data using the [Fake Store API](https://fakestoreapi.com). Here's an example of the API endpoint used:
+
+```javascript
+fetch(`https://fakestoreapi.com/products/${id}`)
+  .then((res) => res.json())
+  .then((data) => console.log(data));
+
+To run this project locally, follow these steps:
+
+Clone the repository:
+git clone https://github.com/username/repository-name.git
+cd repository-name
+Install dependencies:
+npm install
+Start the development server:
+
+npm start
+Home Page:
+<img width="956" alt="image" src="https://github.com/user-attachments/assets/f4733301-6764-489c-97e7-ccc5232dce4e" />
+
+Single product Page:
+<img width="958" alt="image" src="https://github.com/user-attachments/assets/0e8390b8-e74a-430b-9c81-58566b9678d6" />
+
+cart Page:
+<img width="947" alt="image" src="https://github.com/user-attachments/assets/50a46092-1f71-42c0-883b-6b48815d5b9a" />
+
+Checkout Page:
+<img width="949" alt="image" src="https://github.com/user-attachments/assets/ed93f363-f194-463b-8d6e-3558a47dd8b2" />
+
+
+
+
+
